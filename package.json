@@ -1,0 +1,27 @@
+{
+	"name": "school-management-app",
+	"version": "1.0.0",
+	"description": "App to manage school students, teachers and class info",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server/server",
+		"server": "nodemon server/server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"build": "cd client && npm install && npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mistry-Shubham/school-management-app.git"
+	},
+	"author": "Shubham Mistry",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Mistry-Shubham/school-management-app/issues"
+	},
+	"homepage": "https://github.com/Mistry-Shubham/school-management-app#readme",
+	"dependencies": {
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1"
+	}
+}
